@@ -1,0 +1,33 @@
+﻿@model List<Partner>
+<h1 class="text-center text-uppercase mt-3">Master-Hub Partner</h1>
+<br />
+<a href="@Url.Action("addpartner","home")" class="btn btn-primary text-decoration-none "> Add New Partner</a>
+<br />
+<br />
+
+
+<table class="table text-white table-bordered table-striped">
+    <thead class="text-white""">
+        <tr>
+            <th>Partner Id</th>
+            <th>Partner Name</th>
+            <th>Partner Phone</th>
+            <th>Partner Experties</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pt in Model)
+        {
+            <tr>
+                <td>@pt.Partner_Id</td>
+                <td>@pt.Partner_name</td>
+                <td>@pt.Partner_phonr</td>
+                <td>@pt.Partner_experties</td>
+                <td><a class="btn btn-danger" href="@Url.Action("partnerdelete","home",new{id=pt.Partner_Id} )">Delete</a></td>
+                <td><a class="btn btn-warning" href="@Url.Action("partnerupdate","home",new{id=pt.Partner_Id} )">Update</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

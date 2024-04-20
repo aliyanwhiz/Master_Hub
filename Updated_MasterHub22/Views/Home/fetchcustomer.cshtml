@@ -1,0 +1,39 @@
+﻿@model List<Customer>
+<h1 class="text-center text-uppercase mt-3">Master-Hub Customer</h1>
+<br />
+<a href="@Url.Action("addcustomer","home")" class="btn btn-primary text-decoration-none "> Add New Customer</a>
+<br />
+<br />
+
+
+<table class=" text-white table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Customer Id</th>
+            <th>Customer Name</th>
+            <th>Customer Email</th>
+            <th>Customer Password</th>
+            <th>Customer Phone</th>
+            <th>Customer City</th>
+            <th>Customer Address</th>
+            <th>DELETE</th>
+            <th>UPDATE</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cus1 in Model)
+        {
+            <tr>
+                <td>@cus1.Cus_id</td>
+                <td>@cus1.Cus_name</td>
+                <td>@cus1.Cus_email</td>
+                <td>@cus1.Cus_password</td>
+                <td>@cus1.Cus_phone</td>
+                <td>@cus1.Cus_city</td>
+                <td>@cus1.Cus_address</td>
+                <td><a class="btn btn-danger" href="@Url.Action("customerdelete","home",new{id=@cus1.Cus_id} )">Delete</a></td>
+                <td><a class="btn btn-warning" href="@Url.Action("customerupdate","home",new{id=@cus1.Cus_id} )">Update</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

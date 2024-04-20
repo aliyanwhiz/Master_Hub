@@ -1,0 +1,8 @@
+﻿@*@model List<Services>
+<select name="service_name" class="form-select mb-4">
+    <option hidden>Select Any Services</option>
+    @foreach (var SB in Model)
+    {
+        <option value="@SB.Services_Name">@SB.Services_Name</option>
+    }
+</select>*@

@@ -1,0 +1,35 @@
+﻿@model List<Services>
+<h1 class="text-center text-uppercase mt-3">Master-Hub Service</h1>
+<br />
+<a href="@Url.Action("addservice","home")" class="btn btn-primary text-decoration-none "> Add New Services</a>
+<br />
+<br />
+
+
+<table class="table table-bordered text-white table-striped">
+    <thead>
+        <tr>
+            <th>Service Id</th>
+            <th>Serice Name</th>
+            <th>Serice Image</th>
+            <th>DELETE</th>
+            <th>UPDATE-DATA</th>
+            <th>UPDATE-IMAGE</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ser in Model)
+        {
+            <tr>
+                <td>@ser.Service_Id</td>
+                <td>@ser.Services_Name</td>
+                <td>
+                    <img src="@("~/service_image/"+ser.Services_Image)" asp-append-version="true" width="50px" height="30px">
+                </td>
+                <td><a class="btn btn-danger" href="@Url.Action("servicedelete","home",new{id=@ser.Service_Id} )">Delete</a></td>
+                <td><a class="btn btn-info" href="@Url.Action("serviceupdatedata","home",new{id=@ser.Service_Id} )">Update-Data</a></td>
+                <td><a class="btn btn-primary" href="@Url.Action("serviceupdateimage","home",new{id=@ser.Service_Id} )">Update-Image</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,53 @@
+﻿@using DashBoard2.Models;
+@{
+	Layout = "../shared/_Layoutwebsite.cshtml";
+}
+@model List<Services>
+<!-- Feature Section -->
+<style>
+	.feature-img {
+		width: 350px !important;
+		height: 250px !important;
+	}
+</style>
+<section class="mt-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 aos" data-aos="fade-up">
+				<div class="section-heading-two">
+					<h2>Multiple Services</h2>
+					<p>What do you need to find?</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			@foreach (var servicesdata in Model)
+			{
+
+				<div class="col-md-6 col-lg-4">
+					<div class="feature-widget">
+						<div class="feature-img">
+							<a href="@Url.Action("ServiceBooking","Customer",new {myid= servicesdata.Service_Id})">
+								<img src="@("~/service_image/"+servicesdata.Services_Image)" asp-append-version="true" class="img-fluid" alt="img">
+							</a>
+						</div>
+						<a href="@Url.Action("ServiceBooking","Customer")">
+							<div class="feature-icon">
+								<span>
+									<img src="~/website/img/icons/feature-icon-09.svg" alt="img">
+								</span>
+								<div class="feature-title">
+									<h5>@servicesdata.Services_Name</h5>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			}
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /Feature Section -->

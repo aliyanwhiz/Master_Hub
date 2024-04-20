@@ -1,0 +1,31 @@
+﻿<h1 class="m-4 text-center">Admin Profile</h1>
+@model List<Admin>
+<table class="table text-white border ">
+    <thead>
+        <tr>
+            <th class="text-center text-light">ID</thclas>
+            <th class="text-center text-light">NAME</th>
+            <th class="text-center text-light">EMAIL</th>
+            <th class="text-center text-light">PASSWORD</th>
+            <th class="text-center text-light">IMAGE</th>
+            <th class="text-center text-light">UPDATE DATA</th>
+            <th class="text-center text-light">IMAGE UPDATE</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var a in Model)
+        {
+            <tr>
+                <td>@a.Adm_id</td>
+                <td>@a.Adm_name</td>
+                <td>@a.Adm_email</td>
+                <td>@a.Adm_password</td>
+                <td>
+                    <img src="@("~/admin_image/"+a.Adm_image)" asp-append-version="true" width="50px" height="30px">
+                </td>
+                <td><a class="btn btn-info" href="@Url.Action("updateprofile","home",new{id=@a.Adm_id} )">Update-Data</a></td>
+                <td><a class="btn btn-primary" href="@Url.Action("updateimage","home",new{id=@a.Adm_id} )">Update-Image</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,92 @@
+﻿@using DashBoard2.Models;
+@{
+    Layout = "../shared/_Layoutwebsite.cshtml";
+}
+@model Bookingservice
+<!-- Breadcrumb -->
+<h1>@TempData["service"]</h1>
+<div class="breadcrumb-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <h2 class="breadcrumb-title">Booking</h2>
+                <nav aria-label="breadcrumb" class="page-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href=@Url.Action("Customer","Index")>Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Booking</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Breadcrumb -->
+
+<div class="content">
+
+    <div class="container">
+
+        <!-- Get In Touch -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="contact-queries">
+                    <h2>Book Your Service</h2>
+                    <form method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Customer Name</label>
+                                    <input class="form-control" type="text" placeholder="Enter Name*" name="customer_name" required maxlength="10" title="Maximum length is 10 characters are required">
+                                    @* <span asp-validation-for="customer_name" class="text-danger"></span> *@
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Customer Email</label>
+                                    <input class="form-control" type="email" placeholder="Enter Email Address*" name="customer_email" required maxlength="25" title="Maximum length is 25 characters are required">
+                                    @* <span asp-validation-for="customer_email" class="text-danger"></span> *@
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="col-form-label">Customer Phone Number</label>
+                                    <input class="form-control" type="text" placeholder="Enter Phone Number" name="customer_phone" title="Alphabet letters are not allow" maxlength="11" required>
+                                    @* <span asp-validation-for="customer_phone" class="text-danger"></span> *@
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label">Service Date</label>
+                                    <input class="form-control" type="date" name="customer_date" id="datePicker" min="" value="" placeholder="Select Your Date" required>
+                                    @* <span asp-validation-for="customer_date" class="text-danger"></span> *@
+
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label">Service Name</label>
+                                    <input class="form-control" type="text" name="service_name" value="@ViewBag.servicename" readonly>
+                                </div>
+                                <div class="form-group">
+                                    @Html.Partial("../home/showcities",ViewData["cities"])
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label">Customer Message</label>
+                                    <textarea class="form-control" rows="4" placeholder="Type Message" name="customer_message" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="btn btn-primary" type="submit">Send Message<i class="feather-arrow-right-circle ms-2"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- /Get In Touch -->
+
+    </div>
+</div>
+<script>
+    var today = new Date();
+    var date = today.toISOString().slice(0, 10);
+    document.getElementById("datePicker").min = date;
+</script>

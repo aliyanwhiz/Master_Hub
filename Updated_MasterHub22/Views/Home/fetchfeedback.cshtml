@@ -1,0 +1,31 @@
+﻿@model List<Feedback>
+<h1 class="text-center text-uppercase mt-3">Master-Hub Feedback</h1>
+<br />
+<a href="@Url.Action("addfeedback","home")" class="btn btn-primary text-decoration-none "> Add New Feedback</a>
+<br />
+<br />
+
+
+<table class="table table-bordered text-white table-striped">
+    <thead>
+        <tr>
+            <th>Feedback Id</th>
+            <th>Feedback Name</th>
+            <th> Message</th>
+            <th>DELETE</th>
+            <th>UPDATE</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var fe in Model)
+        {
+            <tr>
+                <td>@fe.Feedback_Id</td>
+                <td>@fe.Feedback_name</td>
+                <td>@fe.Feedback_Message</td>
+                <td><a class="btn btn-danger" href="@Url.Action("feedbackdelete","home",new{id=@fe.Feedback_Id} )">Delete</a></td>
+                <td><a class="btn btn-warning" href="@Url.Action("feedbackupdate","home",new{id=@fe.Feedback_Id} )">Update</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

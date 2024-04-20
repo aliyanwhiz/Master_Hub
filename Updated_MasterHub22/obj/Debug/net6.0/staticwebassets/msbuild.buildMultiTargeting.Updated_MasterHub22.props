@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Updated_MasterHub22.props" />
+</Project>

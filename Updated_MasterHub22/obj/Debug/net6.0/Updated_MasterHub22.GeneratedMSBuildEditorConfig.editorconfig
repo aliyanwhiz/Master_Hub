@@ -1,0 +1,203 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Updated_MasterHub22
+build_property.RootNamespace = Updated_MasterHub22
+build_property.ProjectDir = F:\Updated_MasterHub22\Updated_MasterHub22\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\Updated_MasterHub22\Updated_MasterHub22
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Controllers/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbGxlcnNcQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Customer/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Customer/AllServices.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQWxsU2VydmljZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Customer/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ29udGFjdFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Customer/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Customer/ServiceBooking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcU2VydmljZUJvb2tpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Customer/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcU2lnblVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/addadmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhZGRhZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/addbooking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhZGRib29raW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/addcity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhZGRjaXR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/addcustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhZGRjdXN0b21lci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/addfeedback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhZGRmZWVkYmFjay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/addpartner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhZGRwYXJ0bmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/addservice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhZGRzZXJ2aWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/bookingupdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxib29raW5ndXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/cityupdatedata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjaXR5dXBkYXRlZGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/cityupdateimage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjaXR5dXBkYXRlaW1hZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/customerupdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjdXN0b21lcnVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/Feedbackupdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGZWVkYmFja3VwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/fetchbooking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmZXRjaGJvb2tpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/fetchcity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmZXRjaGNpdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/fetchcustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmZXRjaGN1c3RvbWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/fetchfeedback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmZXRjaGZlZWRiYWNrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/fetchpartner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmZXRjaHBhcnRuZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/fetchservice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmZXRjaHNlcnZpY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/forget.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmb3JnZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/myservices.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxteXNlcnZpY2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/partnerupdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwYXJ0bmVydXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/serviceupdatedata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzZXJ2aWNldXBkYXRlZGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/serviceupdateimage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzZXJ2aWNldXBkYXRlaW1hZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/showcities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzaG93Y2l0aWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/showservice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzaG93c2VydmljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/updateimage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx1cGRhdGVpbWFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Home/updateprofile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx1cGRhdGVwcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-jm0hmtt2jw
+
+[F:/Updated_MasterHub22/Updated_MasterHub22/Views/Shared/_Layoutwebsite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXR3ZWJzaXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-mr4ayg0pr2

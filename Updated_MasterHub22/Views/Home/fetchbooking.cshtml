@@ -1,0 +1,39 @@
+﻿@model List<Bookingservice>
+<h1 class="text-center text-uppercase mt-3">Master-Hub Booking</h1>
+<br />
+<a href="@Url.Action("addbooking","home")" class="btn btn-primary text-decoration-none "> Add New Booking</a>
+<br />
+<br />
+
+
+<table class="table table-bordered text-white table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Service</th>
+            <th>City</th>
+            <th>Message</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Book in Model)
+        {
+            <tr>
+                <td>@Book.Book_id</td>
+                <td>@Book.customer_name</td>
+                <td>@Book.customer_email</td>
+                <td>@Book.customer_phone</td>
+                <td>@Book.service_name</td>
+                <td>@Book.city_name</td>
+                <td>@Book.customer_message</td>
+                <td><a class="btn btn-danger" href="@Url.Action("bookingdelete","home",new{id=@Book.Book_id} )">Delete</a></td>
+                <td><a class="btn btn-primary" href="@Url.Action("bookingupdate","home",new{id=@Book.Book_id} )">Update</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

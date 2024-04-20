@@ -1,0 +1,43 @@
+﻿@{
+	Layout = "../shared/_Layoutwebsite.cshtml";
+}
+<div class="main-wrapper">
+	<div class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-lg-6 mx-auto">
+					<div class="login-wrap">
+						<!-- Login Form -->
+						<form class="form-control p-4 bg-ligh" method="post">
+							<h3>User Login</h3>
+							<div class="log-form">
+								<div class="form-group">
+									<label class="col-form-label">E-mail</label>
+									<input type="email" class="form-control" placeholder="example@email.com" name="Cus_email" required maxlength="20" title="Maximum length is 20 characters are required">
+								</div>
+								<div class="form-group">
+									<label class="col-form-label d-block">Password</label>
+									<div class="pass-group">
+										<input type="password" class="form-control pass-input" placeholder="*************" name="Cus_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+										<span class="toggle-password feather-eye"></span>
+									</div>
+								</div>
+							</div>
+							<button class="btn btn-primary w-100 login-btn" type="submit" values="LOGIN">Login</button>
+							<h5 class="text-center text-danger">@ViewBag.message</h5>
+							<p class="no-acc">Don't have an account ?  <a href="@Url.Action("SignUp","Customer")">Register</a></p>
+						</form>
+
+						<!-- /Login Form -->
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- Cursor -->
+	<div class="mouse-cursor cursor-outer"></div>
+	<div class="mouse-cursor cursor-inner"></div>
+	<!-- /Cursor -->
+</div>

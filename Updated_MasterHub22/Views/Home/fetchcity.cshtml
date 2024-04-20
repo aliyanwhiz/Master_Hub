@@ -1,0 +1,35 @@
+﻿@model List<City>
+<h1 class="text-center text-uppercase mt-3">Master-Hub City</h1>
+<br />
+<a href="@Url.Action("addcity","home")" class="btn btn-primary text-decoration-none "> Add New City</a>
+<br />
+<br />
+
+
+<table class="table text-white table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>City Id</th>
+            <th>City Name</th>
+            <th>City Image</th>
+            <th>DELETE</th>
+            <th>UPDATE-DATA</th>
+            <th>UPDATE-IMAGE</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ct in Model)
+        {
+            <tr>
+                <td>@ct.City_id</td>
+                <td>@ct.City_name</td>
+                <td>
+                    <img src="@("~/city_images/"+ct.City_image)" asp-append-version="true" width="50px" height="30px">
+                </td>
+                <td><a class="btn btn-danger" href="@Url.Action("citydelete","home",new{id=@ct.City_id} )">Delete</a></td>
+                <td><a class="btn btn-info" href="@Url.Action("cityupdatedata","home",new{id=@ct.City_id} )">Update-Data</a></td>
+                <td><a class="btn btn-primary" href="@Url.Action("cityupdateimage","home",new{id=@ct.City_id} )">Update-Image</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

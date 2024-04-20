@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>MaterHub || Index</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/website/img/favicon-01.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/website/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="~/website/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="~/website/plugins/fontawesome/css/all.min.css">
+
+    <!-- Fearther CSS -->
+    <link rel="stylesheet" href="~/website/css/feather.css">
+
+    <!-- select CSS -->
+    <link rel="stylesheet" href="~/website/plugins/select2/css/select2.min.css">
+
+    <!-- Owl carousel CSS -->
+    <link rel="stylesheet" href="~/website/css/owl.carousel.min.css">
+
+    <!-- Aos CSS -->
+    <link rel="stylesheet" href="~/website/plugins/aos/aos.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="~/website/css/style.css">
+	<style>
+		.logo img{
+			max-height:300px !important;
+			height: 60px !important;
+		}
+		.has-submenu{
+			padding :4px 20px !important;
+		}
+		.navbar{
+			padding: 4px 8px !important;
+		}
+	</style>
+</head>
+<body>
+	<div class="main-wrapper">
+	<!-- Header -->
+	<header class="header header-two">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg header-nav">
+				<div class="navbar-header">
+					<a id="mobile_btn" href="javascript:void(0);">
+						<span class="bar-icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</a>
+					<a  href="index.html" class="navbar-brand logo  w-100 h-100">
+						<img src="~/website/img/mylogo.png.png" class=""  width="150" height="250" alt="Logo">
+					</a>
+					<a href="index.html" class="navbar-brand logo-small">
+							<img src="~/website/img/mylogo.png.png" class="img-fluid" alt="Logo">
+					</a>
+				</div>
+				<div class="main-menu-wrapper">
+					<div class="menu-header">
+						<a href="index.html" class="menu-logo">
+							<img src="~/website/img/mylogo.png.png" class="img-fluid" alt="Logo">
+						</a>
+						<a id="menu_close" class="menu-close" href="javascript:void(0);"> <i class="fas fa-times"></i></a>
+					</div>
+					<ul class="main-nav px-5">
+						<li class="has-submenu megamenu active">
+							<a href="@Url.Action("Index","Customer")">Home</a>
+						</li>
+						<li class="has-submenu megamenu ">
+								<a href="@Url.Action("About","Customer")">About</a>
+						</li>
+							<li class="has-submenu megamenu ">
+								<a href="@Url.Action("AllServices","Customer")">Services</a>
+							</li>
+						</li>
+						<li class="has-submenu megamenu">
+								<a href="@Url.Action("ContactUs","Customer")">FeedBack</a>
+						</li>
+						<li class="has-submenu megamenu">
+								<a href="@Url.Action("login","Home")">Admin</a>
+						</li>
+
+						<li class="login-link">
+							<a href="@Url.Action("SignUp","Customer")">Register</a>
+						</li>
+				</div>
+				<ul class="nav header-navbar-rht">
+					<li class="nav-item">
+							@{
+								var checksession = ViewContext.HttpContext.Session.GetString("customer_id");
+								if (checksession == null)
+								{
+									<a class="nav-link header-login" href="@Url.Action("Login","Customer")"><i class="fa fa-sign-in" aria-hidden="true"></i> Log in</a>
+								}
+								else
+								{
+									<a class="nav-link header-login" href="@Url.Action("Logout","Customer")">Logout</a>
+								}
+							}
+							
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<!-- /Header -->
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+	<!-- Footer -->
+	<footer class="footer footer-two mt-5 bg-ligh">
+
+		<!-- Footer Top -->
+		<div class="footer-top aos" data-aos="fade-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-6">
+						<!-- Footer Widget -->
+						<div class="footer-widget">
+							<div class="footer-logo">
+								<a href="index.html"><img src="website/img/mylogo.png.png" alt="logo"></a>
+							</div>
+							<!-- Footer Widget -->
+							<div class="footer-widget footer-contact">
+								<div class="footer-contact-info">
+									<div class="footer-address">
+										<span><i class="feather-phone-call text-dark"></i></span>
+										<div>
+											<h6>Tel</h6>
+											<p>310-437-2766</p>
+										</div>
+									</div>
+									<div class="footer-address">
+										<span><i class="feather-mail text-dark"></i></span>
+										<div>
+											<h6>Email Address</h6>
+											<p><a href="#">MasterHub@gmail.com</a></p>
+										</div>
+									</div>
+									<div class="footer-address">
+										<span><i class="feather-map-pin text-dark"></i></span>
+										<div>
+											<h6>Address</h6>
+											<p>MasterHubServices Office Number 340, United States</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /Footer Widget -->
+						</div>
+						<!-- /Footer Widget -->
+					</div>
+					<div class="col-lg-2 col-md-6">
+						<!-- Footer Widget -->
+						<div class="footer-widget footer-menu">
+							<h2 class="footer-title">Quick Links</h2>
+							<ul>
+								<li>
+										<a href="@Url.Action("Index","Customer")">Home</a>
+								</li>
+								<li>
+										<a href="@Url.Action("About","Customer")">About Us</a>
+								</li>
+								<li>
+										<a href="@Url.Action("AllServices","Customer")">Services</a>
+								</li>
+								<li>
+										<a href="@Url.Action("ServiceBooking","Customer")">Booking</a>
+								</li>
+								<li>
+										<a href="@Url.Action("ContactUs","Customer")">Feedback</a>
+								</li>
+								<li>
+										<a href="@Url.Action("login","Home")">Admin</a>
+								</li>
+							</ul>
+						</div>
+						<!-- /Footer Widget -->
+					</div>
+
+
+					<div class="col-lg-5 col-md-10">
+						<!-- Footer Widget -->
+						<div class="footer-widget">
+							<h2 class="footer-title">Instagram Feed</h2>
+							<ul class="row insta-row">
+								<li class="col-3 col-md-4">
+									<a href="javascript:void(0);">
+										<img src="~/website/img/services/service-01.jpg" alt="Instagram Image" class="img-fluid">
+									</a>
+								</li>
+								<li class="col-3 col-md-4">
+									<a href="javascript:void(0);">
+										<img src="~/website/img/services/service-02.jpg" alt="Instagram Image" class="img-fluid">
+									</a>
+								</li>
+								<li class="col-3 col-md-4">
+									<a href="javascript:void(0);">
+										<img src="~/website/img/services/service-03.jpg" alt="Instagram Image" class="img-fluid">
+									</a>
+								</li>
+								<li class="col-3 col-md-4">
+									<a href="javascript:void(0);">
+										<img src="~/website/img/services/service-04.jpg" alt="Instagram Image" class="img-fluid">
+									</a>
+								</li>
+								<li class="col-3 col-md-4">
+									<a href="javascript:void(0);">
+										<img src="~/website/img/services/service-05.jpg" alt="Instagram Image" class="img-fluid">
+									</a>
+								</li>
+								<li class="col-3 col-md-4">
+									<a href="javascript:void(0);">
+										<img src="~/website/img/services/service-06.jpg" alt="Instagram Image" class="img-fluid">
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- /Footer Widget -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Footer Top -->
+		<!-- Footer Bottom -->
+		<div class="footer-bottom bg-dark">
+			<div class="container">
+				<!-- Copyright -->
+				<div class="copyright">
+					<div class="row align-items-center">
+						<div class="col-lg-4 col-sm-6">
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="social-icon">
+								<ul>
+									<li>
+											<a href="https://www.facebook.com/AptechMetro/ " target="_blank"><i class="fa-brands fa-facebook"></i> </a>
+									</li>
+									<li>
+											<a href="https://twitter.com/Aptech_MSG" target="_blank"><i class="fab fa-twitter"></i> </a>
+									</li>
+									<li>
+											<a href="https://www.instagram.com/aptech_metro/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+									</li>
+									<li>
+											<a href="https://aptech-education.com.pk/" target="_blank"><i class="fa-brands fa-google"></i></a>
+									</li>
+									<li>
+											<a href="https://www.youtube.com/c/aptechmetrostargatecenter" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Copyright -->
+			</div>
+		</div>
+		<!-- /Footer Bottom -->
+
+	</footer>
+	<!-- /Footer -->
+
+	</div>
+	<!-- jQuery -->
+	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+	<script src="~/website/js/jquery-3.6.1.min.js"></script>
+
+	<!-- Bootstrap Core JS -->
+	<script src="~/website/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Fearther JS -->
+	<script src="~/website/js/feather.min.js"></script>
+
+	<!-- Owl Carousel JS -->
+	<script src="~/website/js/owl.carousel.min.js"></script>
+
+	<!-- select JS -->
+	<script src="~/website/plugins/select2/js/select2.min.js"></script>
+
+	<!-- Aos -->
+	<script src="~/website/plugins/aos/aos.js"></script>
+
+	<!-- Slick JS -->
+	<script src="~/website/js/slick.js"></script>
+
+	<!-- Top JS -->
+	<script src="~/website/js/backToTop.js"></script>
+
+	<!-- Custom JS -->
+	<script src="~/website/js/script.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
